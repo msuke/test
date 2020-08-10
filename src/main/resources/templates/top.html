@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <form method="post" enctype="multipart/form-data" action="execute">
+    <form method="post" enctype="multipart/form-data" action="execute" th:object="${testForm}">
         <input type="file" name="file"> </br>
         <label>
-            min<input type="text" name="min" value="0"> </br>
+            min<input type="text" name="min" value="0" size="3"> </br>
         </label>
         <label>
-            sec<input type="text" name="sec" value="0"> </br>
+            sec<input type="text" name="sec" value="0" size="3"> </br>
         </label>
         <label>
-            mSec<input type="text" name="mSec" value="0"> </br>
+            mSec<input type="text" name="mSec" value="0" size="3"> </br>
         </label>
         <input type="submit" value="execute!">
     </form>
