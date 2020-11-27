@@ -6,7 +6,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.time.Duration;
 import java.time.LocalTime;
 
-//TODO validate
+//TODO validate あんまりかわらない　
 @Data
 public class TestForm {
     private MultipartFile file;
